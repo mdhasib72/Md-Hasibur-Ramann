@@ -392,14 +392,36 @@ height: 14px;
   border-radius: 6px;
   border: 1px solid #e5e7eb;
 }
-@media screen and (max-width: 1200px) {
-    .main-container{
-        grid-template-columns: 1fr;
-        padding: auto;
-    }
-    .sidebar{
-        position: static;
-        height: auto;
-    }
-    
+/* Mobile Responsive Improvements */
+@media screen and (max-width: 768px) {
+  .main-container {
+    grid-template-columns: 1fr;
+    padding: 16px 12px;
+    gap: 20px;
+  }
+
+  .sidebar {
+    position: static;
+    padding: 20px 16px;
+  }
+
+  .main-content {
+    padding: 24px 16px;
+  }
+
+  .contact, .social {
+    margin: 15px 0;
+    padding: 12px 0;
+  }
+
+  nav {
+    justify-content: center;
+    gap: 16px;
+    flex-wrap: wrap;
+  }
+
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
 }
